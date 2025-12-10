@@ -14,7 +14,7 @@ export default function MobileProjects() {
         "A modern task-management mobile interface designed for clarity and ease of use. The layout emphasizes quick task tracking, visual priority indicators, and smooth interaction. Users can view progress, search tasks, add new tasks effortlessly, and navigate between pending and completed sections with clean, color-coded organization.",
       tools: "Android Studio, Webstorm",
       images: ["/task1.png", "/task2.png","/task3.png","/task4.png"],
-      video: "https://drive.google.com/file/d/1PPtW2DMYlLwWi5Z5M7Uxw_9ZrDL5ln-b/view?usp=sharing",
+      video: "/TaskApp.mp4",
       github: "https://github.com/AY2025-S2-C346/ca1-huizh11.git",                          // leave empty if there’s no repo
       design:
         "The Task Manager app focuses on clear information hierarchy and effortless interaction. A soft, minimal UI supports quick task scanning, while color-coded states (pending, completed, overdue) help users understand status at a glance. Key actions—adding tasks, searching, and viewing summaries—are placed prominently for fast access. Rounded cards, simple icons, and consistent spacing maintain an intuitive flow, reducing cognitive load and supporting a smooth, productive user experience.",

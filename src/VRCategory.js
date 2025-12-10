@@ -33,7 +33,8 @@ export default function ImmersiveProjects() {
         "This section will later expand into a full case study on puzzle and interaction design.",
       images: ["/EscapeRoom.png"],
 
-      video: "https://drive.google.com/file/d/1EoKhPJTDJdoBIUaYpiNIl-t2uQQmBS6x/view?usp=sharing",
+    video: "https://drive.google.com/file/d/1EoKhPJTDJdoBIUaYpiNIl-t2uQQmBS6x/preview",
+
 
       design:
         "The game’s art style draws inspiration from ancient Central and South American temples. Warm torchlight, stone textures, carvings, and earthy tones build a calm yet mysterious mood. UI is diegetic — all clues exist naturally in the environment.",
