@@ -241,7 +241,6 @@ body {
 -------------------------------------------------- */
 
 .about-text {
-  max-width: 50;
   line-height: 2;
   color: #ffc5d1;
   font-size: 25px;
@@ -896,6 +895,61 @@ body {
   width: 28px;
   height: 28px;
 }
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background-color: #f7d1d8;
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.resume-btn:hover {
+  background-color: #ecb8c2;
+  transform: translateY(-2px);
+}
+/* ---------------- CERTIFICATE PAGE ---------------- */
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  min-height: 200px; /* forces it to show */
+}
+
+.cert-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+.cert-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffc9d9;
+  margin-top: 5px;
+}
+
+
+
+
+
 
 
 

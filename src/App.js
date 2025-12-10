@@ -93,9 +93,40 @@ export default function App() {
         <h2 className="section-title">Who I Am</h2>
 
         <p className="about-text">
-          I’m Hui Zhi, a UI/UX design student with a strong interest in creating clear, intuitive, and visually engaging user experiences. I enjoy working across both web and immersive technologies, focusing on thoughtful interaction design and clean, modern interfaces. I love learning new tools, exploring creative problem-solving, and building designs that balance usability with aesthetic appeal.
+          I’m Hui Zhi, a UI/UX design student with a strong interest in creating clear, 
+          intuitive, and visually engaging user experiences. I enjoy working across both 
+          web and immersive technologies, focusing on thoughtful interaction design and 
+          clean, modern interfaces. I love learning new tools, exploring creative 
+          problem-solving, and building designs that balance usability with aesthetic appeal.
         </p>
+
+        {/* ⭐ BUTTONS ADDED BELOW (side by side, no disruption) ⭐ */}
+        <div style={{ display: "flex", gap: "15px", marginTop: "25px", flexWrap: "wrap" }}>
+          
+          {/* Download Resume */}
+          <a 
+            href="/resume.pdf" 
+            download 
+            className="hero-btn btn-hover"
+            style={{ flexShrink: 0 }}
+          >
+            Download Resume
+          </a>
+
+          {/* View Certificates */}
+          <a 
+            href="/certificates"
+            className="hero-btn btn-hover"
+          >
+            View Certificates
+          </a>
+
+
+        </div>
       </section>
+
+
+
 
       {/* ---------------- SKILLS SECTION ---------------- */}
       <section id="skills" className="section scroll-fade">
