@@ -7,7 +7,7 @@ export default function Certificate() {
   // Certificate images
   const certificates = [
     { img: "/Cert.png", title: "Software Testing Foundations" },
-    { img: "/scrum.png", title: "What is Scrum?" },
+    { img: "/Scrum.png", title: "What is Scrum?" },
     { img: "/Agile.png", title: "Agile Foundations" }
   ];
 
