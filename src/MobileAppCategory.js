@@ -13,7 +13,7 @@ export default function MobileProjects() {
       summary:
         "A modern task-management mobile interface designed for clarity and ease of use. The layout emphasizes quick task tracking, visual priority indicators, and smooth interaction. Users can view progress, search tasks, add new tasks effortlessly, and navigate between pending and completed sections with clean, color-coded organization.",
       tools: "Android Studio, Webstorm",
-      images: ["/task1.png", "/task2.png","/task3.png","/task4.png"],
+      images: ["/Task1.png", "/Task2.png","/Task3.png","/Task4.png"],
       video: "/TaskApp.mp4",
       github: "https://github.com/AY2025-S2-C346/ca1-huizh11.git",                          // leave empty if there’s no repo
       design:
