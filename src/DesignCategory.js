@@ -9,36 +9,49 @@ export default function DesignProjects() {
 
   const projects = [
     {
-      title: "Pizza Menu Web Application",
+      title: "Travelly Instagram Banner",
       summary:
-        "A responsive restaurant web UI that lets users explore pizzas, filter options, and browse a clean digital menu.",
-      tools: "Figma, React (concept), Layout Grids, Typography System",
+        "A set of promotional travel banners designed for social media, combining playful collage visuals and AI-enhanced professional layouts to advertise travel deals and services.",
+      tools: "Photoshop, AI Image Enhancement Tools",
       details:
-        "This project focuses on hierarchy, spacing, and typography to make the menu easy to scan. The layout uses a large hero banner, card-based menu sections, and clear call-to-action buttons.",
-      images: ["/pizza-web-1.png", "/pizza-web-2.png"],
-      video: "/pizzaWebDemo.mp4",
-      demoLink: "",
-      github: "",
+        "This project explores two visual directions: a light, collage-style Instagram grid for promotional posts, and a polished, AI-enhanced travel banner for service marketing. Both designs focus on visual hierarchy, clear messaging, and engaging travel storytelling.",
+      images: ["/travel.jpg", "/IG.jpg"],
       design:
-        "Soft dark background with pastel accents, card-style sections, and highlighted category titles for fast visual scanning.",
+        "A combination of pastel collage aesthetics and high-definition AI-enhanced visuals. The first banner uses a playful grid layout and cut-out graphics, while the second presents a refined, agency-style travel advertisement with vibrant scenery and structured typography.",
       functions: [
-        "Clear category breakdown for pizzas and sides",
-        "Search / filter concept for menu browsing",
-        "Balance between imagery and text for easy reading"
+        "Eye-catching layout variations for social media promotion",
+        "Clear messaging to highlight travel deals and services",
+        "Use of visual hierarchy and contrasting styles to engage different audiences"
       ]
     },
 
     {
-      title: "Design Case Study Placeholder",
+      title: "Sustainable Clothing Website",
       summary:
-        "A placeholder card for future detailed design case studies.",
+        "A sustainable fashion e-commerce website concept built as a hi-fi wireframe, focusing on clean navigation, product browsing, and a smooth shopping experience.",
       tools: "Figma",
       details:
-        "Use this space to add upcoming UI/UX or branding case studies that follow the same layout.",
-      images: [],
-      video: null,
-      design: "",
-      functions: []
+        "This wireframe demonstrates a full shopping flow including homepage browsing, product detail interactions, cart management, and checkout. The design focuses on clean visual hierarchy, intuitive movement between pages, and a modern eco-friendly aesthetic.",
+      images: ["/home1.png","/home2.png","/home3.png","/shop.png","/cart.png","/contact.png","/product.png"],
+      design:
+        "A minimal, Earth-toned interface that highlights product imagery, clean typography, and eco-friendly branding. Soft shadows, rounded components, and simple iconography support an approachable shopping experience.",
+
+      // ⭐ YOUR LAYOUT IMAGES (your pic included)
+      layoutImages: ["/lofi.png"],
+
+      layout:
+        "The layout follows a classic e-commerce structure with a homepage hero, product grid, category filters, and a detailed product page. Cart and checkout screens use a multi-step layout with clear visibility of quantities, stock status, and order summary.",
+
+      functions: [
+        "Add-to-cart interaction with product quantity selection",
+        "Stock logic that disables items and displays ‘Out of Stock’ when quantity reaches zero",
+        "Multi-page navigation between homepage, product pages, cart, and checkout",
+        "Hover interactions on product cards, buttons, and navigation elements",
+        "Smooth micro-animations during page transitions and cart updates"
+      ],
+
+      video: "/Sustainable.mp4",
+      FigmaLink: "https://www.figma.com/design/rITR6OJn9oGFss5lmVZoR7/CA1_SustainableClothingWebsite_24011094?node-id=256-69&t=4CVEE3XnCIyFU4ss-0"
     }
   ];
 
@@ -55,9 +68,12 @@ export default function DesignProjects() {
     <div className="project-page">
       <Navbar />
 
-      <button className="back-btn" onClick={() => {
-        window.location.href = "/#Projects";
-      }}>
+      <button
+        className="back-btn"
+        onClick={() => {
+          window.location.href = "/#Projects";
+        }}
+      >
         ← Back to Home
       </button>
 
@@ -84,7 +100,7 @@ export default function DesignProjects() {
           </p>
         </div>
 
-        {/* Key Functions / Focus */}
+        {/* Key Functions */}
         <div className="proj-box">
           <h3 className="proj-box-title">Key Focus Areas</h3>
           {project.functions && project.functions.length > 0 ? (
@@ -97,6 +113,29 @@ export default function DesignProjects() {
             <p className="proj-box-text">Details coming soon.</p>
           )}
         </div>
+
+        {/* ⭐ Layout Section — ONLY SHOW IF PROJECT HAS LAYOUT OR IMAGES */}
+        {(project.layoutImages && project.layoutImages.length > 0) || project.layout ? (
+          <div className="proj-box">
+            <h3 className="proj-box-title">Layout Structure</h3>
+
+            {project.layoutImages && project.layoutImages.length > 0 ? (
+              <div className="project-screens-box">
+                {project.layoutImages.map((img, i) => (
+                  <img
+                    key={i}
+                    src={img}
+                    alt={`layout-${i}`}
+                    className="proj-screen-img"
+                  />
+                ))}
+              </div>
+            ) : (
+              <p className="proj-box-text">{project.layout}</p>
+            )}
+          </div>
+        ) : null}
+
 
         {/* Screens */}
         <div className="proj-box">
@@ -117,42 +156,29 @@ export default function DesignProjects() {
           </div>
         </div>
 
-        {/* Video + Buttons */}
-        <div className="proj-box demo-box">
-          <h3 className="proj-box-title">Demo Video</h3>
+        {/* Demo Video (Only if project.video exists) */}
+        {project.video && (
+          <div className="proj-box demo-box">
+            <h3 className="proj-box-title">Demo Video</h3>
 
-          <div className="video-wrapper">
-            {project.video ? (
+            <div className="video-wrapper">
               <video src={project.video} controls className="project-video" />
-            ) : (
-              <p>No media added yet.</p>
-            )}
-          </div>
+            </div>
 
-          <div className="project-btn-row">
-            {project.demoLink && (
-              <a
-                href={project.demoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="proj-demo-btn"
-              >
-                🌐 Live Demo
-              </a>
-            )}
-
-            {project.github && (
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="proj-github-btn"
-              >
-                🔗 GitHub Repo
-              </a>
-            )}
+            <div className="project-btn-row">
+              {project.demoLink && (
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="proj-demo-btn"
+                >
+                  🌐 Live Demo
+                </a>
+              )}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Pagination */}
         <div className="project-pagination">
@@ -174,8 +200,12 @@ export default function DesignProjects() {
             ▶
           </button>
         </div>
-         {/* SCROLL TO TOP BUTTON */}
-        <button className="scroll-top-btn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+
+        {/* Scroll to top */}
+        <button
+          className="scroll-top-btn"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           ↑
         </button>
       </main>

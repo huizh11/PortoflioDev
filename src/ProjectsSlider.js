@@ -20,13 +20,13 @@ export default function ProjectsSlider() {
       icon: "📱",
       link: "/projects/mobile",
     },
-    // {
-    //   id: "design",
-    //   title: "Design",
-    //   desc: "Visual design exploring layouts, branding, and user-centered aesthetics.",
-    //   icon: "🎨",
-    //   link: "/projects/design",
-    // },
+    {
+      id: "design",
+      title: "Design",
+      desc: "Visual design exploring layouts, branding, and user-centered aesthetics.",
+      icon: "🎨",
+      link: "/projects/design",
+    },
     {
       id: "vr",
       title: "VR Projects",
@@ -39,7 +39,7 @@ export default function ProjectsSlider() {
   const pills = [
     { label: "Development Works", category: "software" },
     { label: "Mobile App", category: "mobile" },
-    // { label: "Design Works", category: "design" },
+    { label: "Design Works", category: "design" },
     { label: "Immersive Tech", category: "vr" },
   ];
 
