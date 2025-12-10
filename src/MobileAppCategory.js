@@ -33,6 +33,7 @@ export default function MobileProjects() {
       tools: "Android Studio, Webstorm",
       images: ["/pokemon1.png","/pokemon2.png","/pokemon3.png"],
       video: "/pokemon.mp4",
+      github: "https://github.com/AY2025-S2-C346/lesson-12-huizh11.git",
       design: "The design focuses on clarity, lightness, and ease of use. Soft pastel tones and generous spacing create a calm, welcoming environment, while a structured card-based layout keeps information neatly organized. Interactive elements are intentionally simple and intuitive, ensuring that users can add or edit tasks with minimal friction. The interface is optimized for mobile ergonomics—thumb-friendly controls, readable typography, and smooth visual hierarchy guide users naturally through the experience.",
       functions: ["Fully editable tasks with real-time updates",
         "Able to Add and Delete tasks",
